@@ -33,12 +33,12 @@ public class stream1 {
         // but after stream API.
 
         Stream<Integer> s1 = nums.stream();
-//        Predicate<Integer> pred =  new Predicate<Integer>() {
-//            @Override
-//            public boolean test(Integer i) {
-//                return i%2==0;
-//            }
-//        };
+        Predicate<Integer> pred =  new Predicate<Integer>() {
+            @Override
+            public boolean test(Integer i) {
+                return i%2==0;
+            }
+        };
 //        i -> i%2==0;
 
         Stream<Integer> s2 = s1.filter(i -> i%2==0);
